@@ -11,11 +11,17 @@ set nu
 " Status bar in the bottom of the window, showing name of the file and the cursor position.
 set laststatus=2
 
-" Shows a '·' for every whitespace in the end of the line
+" Shows a '·' for every whitespace in the end of the line.
 set list listchars=tab:\ \ ,trail:·
 
-" Highlight matches of a search
+" Highlight matches of a search.
 set hlsearch
+
+" Ignores case-sensitive.
+set ignorecase
+
+" Shows keystrokes of the current command in the bottom right corner.
+set showcmd
 
 call plug#begin()
 
