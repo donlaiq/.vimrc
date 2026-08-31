@@ -1,5 +1,6 @@
 " Color syntax highlighting.
-syntax on
+" syntax on
+syntax enable
 " It tries to recognize the type of the file based on its name and its content, and activates the auto-indenting.
 filetype plugin indent on
 
@@ -33,12 +34,17 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Automatically, inserts, deletes and manages matching pairs of characters ({}, [], (), etc.).
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'morhetz/gruvbox'
+
+Plug 'rust-lang/rust.vim'
+
 call plug#end()
 
 " Allows 24-bit RGB colors on the terminal.
 set termguicolors
+set background=dark
 " Selected colorscheme
-colorscheme afterglow
+colorscheme gruvbox
 
 " Disable the autocomment when pressing the enter key.
 augroup comments_off
